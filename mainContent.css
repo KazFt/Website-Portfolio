@@ -72,14 +72,9 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-image: url('portfoliowebsitebackground.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-/* Blur overlay */
+/* Blur overlay — fixed background that never moves */
 body::before {
   content: '';
   position: fixed;

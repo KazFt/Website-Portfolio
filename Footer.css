@@ -1,0 +1,83 @@
+/* ========== FOOTER ========== */
+footer {
+  background-color: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 24px;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: whitesmoke;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+  min-width: 90px;
+}
+
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+.social-icon-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Make GitHub icon white since it's dark by default */
+.github-icon {
+  filter: invert(1);
+}
+
+.footer-copy {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0;
+}
+
+/* ========== FOOTER RESPONSIVE ========== */
+@media (max-width: 425px) {
+  .social-links {
+    gap: 12px;
+  }
+
+  .social-link {
+    padding: 14px 18px;
+    min-width: 78px;
+  }
+}

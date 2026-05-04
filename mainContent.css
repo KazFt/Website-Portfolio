@@ -1,0 +1,200 @@
+/* ========== NAVIGATION ========== */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 16px 32px;
+  background: rgba(245, 245, 245, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 16px;
+  z-index: 100;
+  width: fit-content;
+  margin: 16px auto 0 auto;
+}
+
+.nav-logo span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* Gray pill box — Social Media */
+.nav-social-btn {
+  background: rgba(200, 200, 200, 0.5);
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(180, 180, 180, 0.5);
+}
+
+.nav-social-btn:hover {
+  background: rgba(180, 180, 180, 0.7) !important;
+}
+
+/* Gray pill box — About Me */
+.nav-links a[href="#about"] {
+  background: rgba(200, 200, 200, 0.5);
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(180, 180, 180, 0.5);
+}
+
+.nav-links a[href="#about"]:hover {
+  background: rgba(180, 180, 180, 0.7);
+}
+/* ========== BODY ========== */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('portfoliowebsitebackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Blur overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('portfoliowebsitebackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px) brightness(0.75);
+  z-index: -1;
+  transform: scale(1.05);
+}
+/* ========== MAIN WRAPPER ========== */
+main {
+  padding: 40px 24px;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ========== LEFT — PROFILE SECTION ========== */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  background: rgba(245, 245, 245, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+}
+
+/* Top row — pfp + name + title side by side */
+.profile-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.profile-picture {
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid rgba(180, 180, 180, 0.5);
+  flex-shrink: 0;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+.profile-title {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Bottom — Bio */
+.bio-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid rgba(180, 180, 180, 0.4);
+  padding-top: 16px;
+}
+
+.bio-wrapper h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 10px 0;
+}
+
+.bio-text {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.7;
+  margin: 0 0 14px 0;
+}
+
+.bio-label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.bio-label.software {
+  color: #2563eb;
+}
+
+.bio-label.futures {
+  color: #16a34a;
+}

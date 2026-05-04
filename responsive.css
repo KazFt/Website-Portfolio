@@ -1,0 +1,259 @@
+/* ========== RESPONSIVE ========== */
+
+/* ========== MOBILE M (375px) & MOBILE L (425px) NAV FIX ========== */
+@media (max-width: 425px) {
+  header {
+    padding: 10px 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    width: auto;
+    top: 10px;
+  }
+
+  .nav-logo span {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    white-space: nowrap;
+  }
+
+  .nav-social-btn,
+  .nav-links a[href="#about"] {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    border-radius: 16px;
+  }
+}
+
+/* ========== MOBILE S (320px) NAV FIX ========== */
+@media (max-width: 320px) {
+  nav {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 12px;
+    width: 85%;
+    top: 8px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 6px;
+  }
+
+  .nav-links a {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+
+  .nav-logo span {
+    font-size: 0.85rem;
+  }
+}
+/* ========== MOBILE L (425px) NAV FIX ========== */
+@media (min-width: 376px) and (max-width: 425px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 12px;
+    width: auto;
+    max-width: 95vw;
+    top: 10px;
+  }
+
+  .nav-logo span {
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .nav-links a {
+    font-size: 0.72rem;
+    padding: 5px 9px;
+    white-space: nowrap;
+  }
+
+  .nav-social-btn,
+  .nav-links a[href="#about"] {
+    padding: 5px 9px;
+    font-size: 0.72rem;
+    border-radius: 16px;
+  }
+}
+
+/* Tablet — 426px to 768px */
+@media (min-width: 426px) and (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    width: 88%;
+    padding: 14px 28px;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 28px;
+    width: 85%;
+    margin: 32px auto;
+  }
+
+  .bio-wrapper {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 28px;
+  }
+
+  .achievements-section {
+    width: 85%;
+    margin: 32px auto;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+/* Laptop / Desktop — 769px and up */
+@media (min-width: 769px) {
+  .profile-section {
+    flex-direction: row;
+    align-items: flex-start;
+    width: fit-content;
+    max-width: 800px;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .achievements-section {
+    max-width: 860px;
+    margin: 40px auto;
+  }
+}
+/* ========== GOOGLE FONT ========== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ========== BASE FONT ========== */
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+/* ========== LAPTOP FIX — Bio below Profile Top ========== */
+@media (min-width: 769px) {
+  .profile-section {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+
+  .profile-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .bio-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid rgba(180, 180, 180, 0.4);
+    padding-top: 16px;
+    margin-top: 0;
+  }
+}
+/* ========== LAPTOP ALIGNMENT FIX ========== */
+@media (min-width: 769px) {
+  .main-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .profile-section {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .achievements-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .certifications-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    flex: 1;
+  }
+
+  .cert-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .cert-image {
+    flex: 1;
+    min-height: 100px;
+    max-height: 140px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .languages-container {
+    width: 100%;
+    flex-shrink: 0;
+  }
+}

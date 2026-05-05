@@ -63,6 +63,17 @@ nav {
   border-radius: 20px;
   border: 1px solid rgba(180, 180, 180, 0.5);
 }
+/* Gray pill box — Contact */
+.nav-links a[href="#contact"] {
+  background: rgba(200, 200, 200, 0.5);
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(180, 180, 180, 0.5);
+}
+
+.nav-links a[href="#contact"]:hover {
+  background: rgba(180, 180, 180, 0.7);
+}
 
 .nav-links a[href="#about"]:hover {
   background: rgba(180, 180, 180, 0.7);

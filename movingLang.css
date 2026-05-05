@@ -1,4 +1,4 @@
-/* ========== MOVING LANGUAGES STRIP ========== */
+/* ========== LANGUAGES STRIP ========== */
 .languages-container {
   background: rgba(245, 245, 245, 0.75);
   backdrop-filter: blur(10px);
@@ -44,7 +44,7 @@
 }
 
 @keyframes scroll-languages {
-  0% { transform: translateX(0); }
+  0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 

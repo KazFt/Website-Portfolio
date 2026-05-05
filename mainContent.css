@@ -301,3 +301,70 @@ main {
 
 .bio-label.software { color: #2563eb; }
 .bio-label.futures  { color: #16a34a; }
+/* ========== INTRO SCREEN ========== */
+.intro-screen {
+  position: fixed;
+  inset: 0;
+  background: #0a0a0f;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: introFadeOut 1s ease forwards;
+  animation-delay: 2.5s;
+  pointer-events: none;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  animation: introContentFadeIn 1s ease forwards;
+}
+
+.intro-name {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: whitesmoke;
+  margin: 0;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: introContentFadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.intro-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: introContentFadeIn 1s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.intro-line {
+  width: 0px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  animation: introLineExpand 0.8s ease forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes introContentFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes introLineExpand {
+  from { width: 0px; }
+  to   { width: 120px; }
+}
+
+@keyframes introFadeOut {
+  from { opacity: 1; pointer-events: all; }
+  to   { opacity: 0; pointer-events: none; }
+}

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="Footer.css">
   <link rel="stylesheet" href="certfarea.css">
   <link rel="stylesheet" href="movingLang.css">
+  <link rel="stylesheet" href="tickerslip.css">
 </head>
 <body>
 
@@ -26,190 +27,278 @@
     </nav>
   </header>
 
-  <!-- ========== MAIN CONTENT ========== -->
   <main>
-  <div class="main-wrapper">
 
-    <!-- LEFT: Profile + Bio -->
-<section id="about" class="profile-section">
+  <!-- ===== PROFILE SECTION — CENTERED TOP ===== -->
+  <section id="about" class="profile-section">
 
-  <div class="profile-top">
-    <img
-      src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=200"
-      alt="Profile Photo"
-      class="profile-picture"
-    />
-    <div class="profile-details">
-      <p class="profile-name">Emmanuel John</p>
-      <p class="profile-title">Software Dev / Day Trader</p>
+    <div class="profile-top">
+      <img
+        src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=200"
+        alt="Profile Photo"
+        class="profile-picture"
+      />
+      <div class="profile-details">
+        <p class="profile-name">Emmanuel John</p>
+        <p class="profile-title">Software Dev / Day Trader</p>
+      </div>
     </div>
-  </div>
 
-  <div class="bio-wrapper">
-    <h2>About Me</h2>
-    <p class="bio-text" id="bio-software">
-      <span class="bio-label software">Software Development</span><br />
-      I'm an aspiring back-end developer focused on building the systems and logic that power great applications. I'm actively learning server-side programming, databases, and APIs — driven by a genuine love for how things work under the hood.
-    </p>
-    <p class="bio-text" id="bio-other">
-      <span class="bio-label futures">Futures Trading</span><br />
-      I also trade in the futures market with an intermediate level of experience, with a focus on market structure and risk management. It's sharpened my analytical thinking and discipline — skills that carry over directly into my work as a developer.
-    </p>
-  </div>
-
-</section>
-
-    <!-- RIGHT: Certifications + Languages -->
-    <section id="achievements" class="achievements-section">
-
-      <h2 class="section-title">Certifications & Skills</h2>
-
-      <!-- Certification Cards -->
-<div class="certifications-wrapper">
-
-  <!-- Card 1 — Unlocked -->
-  <div class="cert-card" onclick="openCert(this)">
-    <img src="EquityEdgeCertf.png" alt="Certification 1" class="cert-image" />
-    <div class="cert-info">
-      <h3 class="card-title">Equity Edge PropFirm Certificate</h3>
-      <p class="card-description">Issued by: Equity Edge</p>
-      <span class="card-date">2026</span>
+    <div class="bio-wrapper">
+      <h2>About Me</h2>
+      <p class="bio-text" id="bio-software">
+        <span class="bio-label software">Software Development</span><br />
+        I'm an aspiring back-end developer focused on building the systems and logic that power great applications. I'm actively learning server-side programming, databases, and APIs — driven by a genuine love for how things work under the hood.
+      </p>
+      <p class="bio-text" id="bio-other">
+        <span class="bio-label futures">Futures Trading</span><br />
+        I also trade in the futures market with an intermediate level of experience, with a focus on market structure and risk management. It's sharpened my analytical thinking and discipline — skills that carry over directly into my work as a developer.
+      </p>
     </div>
-  </div>
 
-  <!-- Card 2 — In Progress -->
-  <div class="cert-card cert-locked">
-    <img src="your-certificate-2.jpg" alt="Certification 2" class="cert-image" />
-    <div class="cert-overlay">In the Process</div>
-    <div class="cert-info">
-      <h3 class="card-title">Certification</h3>
-      <p class="card-description">Issued by</p>
-      <span class="card-date">Year</span>
-    </div>
-  </div>
+  </section>
 
-  <!-- Card 3 — In Progress -->
-  <div class="cert-card cert-locked">
-    <img src="your-certificate-3.jpg" alt="Certification 3" class="cert-image" />
-    <div class="cert-overlay">In the Process</div>
-    <div class="cert-info">
-      <h3 class="card-title">Certification</h3>
-      <p class="card-description">Issued by</p>
-      <span class="card-date">Year</span>
-    </div>
-  </div>
+  <!-- ===== CERTIFICATIONS & SKILLS — BELOW ===== -->
+  <section id="achievements" class="achievements-section">
 
-  <!-- Card 4 — In Progress -->
-  <div class="cert-card cert-locked">
-    <img src="your-certificate-4.jpg" alt="Certification 4" class="cert-image" />
-    <div class="cert-overlay">In the Process</div>
-    <div class="cert-info">
-      <h3 class="card-title">Certification</h3>
-      <p class="card-description">Issued by</p>
-      <span class="card-date">Year</span>
-    </div>
-  </div>
-</div>
+    <h2 class="section-title">Certifications & Skills</h2>
 
-<!-- Lightbox Overlay -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <div class="lightbox-close" onclick="closeLightbox()">✕</div>
-  <img src="" alt="Certificate Preview" class="lightbox-img" id="lightbox-img" />
-</div>
+    <!-- Certification Cards -->
+    <div class="certifications-wrapper">
 
-      <!-- Moving Programming Languages -->
-      <div class="languages-container">
-        <div class="languages-track">
-
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-            <span>Python</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
-            <span>C++</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-            <span>Java</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-            <span>JavaScript</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
-            <span>HTML</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
-            <span>CSS</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
-            <span>SQL</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
-            <span>TypeScript</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
-            <span>PHP</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" />
-            <span>Swift</span>
-          </div>
-
-          <!-- Duplicate for seamless loop -->
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-            <span>Python</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
-            <span>C++</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-            <span>Java</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-            <span>JavaScript</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
-            <span>HTML</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
-            <span>CSS</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
-            <span>SQL</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
-            <span>TypeScript</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
-            <span>PHP</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" />
-            <span>Swift</span>
-          </div>
-
+      <!-- Card 1 — Unlocked -->
+      <div class="cert-card" onclick="openCert(this)">
+        <img src="EquityEdgeCertf.png" alt="Certification 1" class="cert-image" />
+        <div class="cert-info">
+          <h3 class="card-title">Equity Edge PropFirm Certificate</h3>
+          <p class="card-description">Issued by: Equity Edge</p>
+          <span class="card-date">2026</span>
         </div>
       </div>
 
-    </section>
+      <!-- Card 2 — In Progress -->
+      <div class="cert-card cert-locked">
+        <img src="your-certificate-2.jpg" alt="Certification 2" class="cert-image" />
+        <div class="cert-overlay">In the Process</div>
+        <div class="cert-info">
+          <h3 class="card-title">Certification</h3>
+          <p class="card-description">Issued by</p>
+          <span class="card-date">Year</span>
+        </div>
+      </div>
 
+      <!-- Card 3 — In Progress -->
+      <div class="cert-card cert-locked">
+        <img src="your-certificate-3.jpg" alt="Certification 3" class="cert-image" />
+        <div class="cert-overlay">In the Process</div>
+        <div class="cert-info">
+          <h3 class="card-title">Certification</h3>
+          <p class="card-description">Issued by</p>
+          <span class="card-date">Year</span>
+        </div>
+      </div>
+
+      <!-- Card 4 — In Progress -->
+      <div class="cert-card cert-locked">
+        <img src="your-certificate-4.jpg" alt="Certification 4" class="cert-image" />
+        <div class="cert-overlay">In the Process</div>
+        <div class="cert-info">
+          <h3 class="card-title">Certification</h3>
+          <p class="card-description">Issued by</p>
+          <span class="card-date">Year</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Moving Programming Languages -->
+    <div class="languages-container">
+      <div class="languages-track">
+
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <span>Python</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+          <span>C++</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          <span>Java</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+          <span>HTML</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+          <span>CSS</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+          <span>SQL</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+          <span>TypeScript</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+          <span>PHP</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" />
+          <span>Swift</span>
+        </div>
+
+        <!-- Duplicate for seamless loop -->
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <span>Python</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+          <span>C++</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          <span>Java</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+          <span>HTML</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+          <span>CSS</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+          <span>SQL</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+          <span>TypeScript</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+          <span>PHP</span>
+        </div>
+        <div class="lang-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" />
+          <span>Swift</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Live Ticker -->
+    <div class="ticker-wrapper">
+      <div class="ticker-track">
+
+        <div class="ticker-item">
+          <span class="ticker-name">NASDAQ</span>
+          <span class="ticker-value">19,432.56</span>
+          <span class="ticker-change positive">▲ 1.24%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">S&amp;P 500</span>
+          <span class="ticker-value">5,248.30</span>
+          <span class="ticker-change positive">▲ 0.87%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">DOW JONES</span>
+          <span class="ticker-value">39,127.14</span>
+          <span class="ticker-change negative">▼ 0.32%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">BTC/USD</span>
+          <span class="ticker-value">62,450.00</span>
+          <span class="ticker-change positive">▲ 2.15%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">ETH/USD</span>
+          <span class="ticker-value">3,120.80</span>
+          <span class="ticker-change negative">▼ 0.54%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">GOLD</span>
+          <span class="ticker-value">2,318.40</span>
+          <span class="ticker-change positive">▲ 0.61%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">CRUDE OIL</span>
+          <span class="ticker-value">78.92</span>
+          <span class="ticker-change negative">▼ 1.03%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">EUR/USD</span>
+          <span class="ticker-value">1.0842</span>
+          <span class="ticker-change positive">▲ 0.19%</span>
+        </div>
+
+        <!-- Duplicate for seamless loop -->
+        <div class="ticker-item">
+          <span class="ticker-name">NASDAQ</span>
+          <span class="ticker-value">19,432.56</span>
+          <span class="ticker-change positive">▲ 1.24%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">S&amp;P 500</span>
+          <span class="ticker-value">5,248.30</span>
+          <span class="ticker-change positive">▲ 0.87%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">DOW JONES</span>
+          <span class="ticker-value">39,127.14</span>
+          <span class="ticker-change negative">▼ 0.32%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">BTC/USD</span>
+          <span class="ticker-value">62,450.00</span>
+          <span class="ticker-change positive">▲ 2.15%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">ETH/USD</span>
+          <span class="ticker-value">3,120.80</span>
+          <span class="ticker-change negative">▼ 0.54%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">GOLD</span>
+          <span class="ticker-value">2,318.40</span>
+          <span class="ticker-change positive">▲ 0.61%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">CRUDE OIL</span>
+          <span class="ticker-value">78.92</span>
+          <span class="ticker-change negative">▼ 1.03%</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-name">EUR/USD</span>
+          <span class="ticker-value">1.0842</span>
+          <span class="ticker-change positive">▲ 0.19%</span>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-close" onclick="closeLightbox()">✕</div>
+    <img src="" alt="Certificate Preview" class="lightbox-img" id="lightbox-img" />
   </div>
+
 </main>
 
   <footer id="social">
@@ -248,5 +337,6 @@
   </div>
 </footer>
 <script src="Script.js"></script>
+<script src="tickerslip.js"></script>
 </body>
 </html>

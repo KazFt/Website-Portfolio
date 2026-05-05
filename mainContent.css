@@ -210,6 +210,85 @@ main {
   color: #444;
   line-height: 1.7;
   margin: 0 0 14px 0;
+}/* ========== MAIN ========== */
+main {
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ========== PROFILE SECTION — CENTERED ========== */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(245, 245, 245, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  width: 100%;
+  max-width: 860px;
+  box-sizing: border-box;
+}
+
+.profile-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.profile-picture {
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid rgba(180, 180, 180, 0.5);
+  flex-shrink: 0;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+.profile-title {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.bio-wrapper {
+  width: 100%;
+  border-top: 1px solid rgba(180, 180, 180, 0.4);
+  padding-top: 16px;
+}
+
+.bio-wrapper h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 10px 0;
+}
+
+.bio-text {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.7;
+  margin: 0 0 14px 0;
 }
 
 .bio-label {
@@ -220,10 +299,5 @@ main {
   margin-bottom: 4px;
 }
 
-.bio-label.software {
-  color: #2563eb;
-}
-
-.bio-label.futures {
-  color: #16a34a;
-}
+.bio-label.software { color: #2563eb; }
+.bio-label.futures  { color: #16a34a; }

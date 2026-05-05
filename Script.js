@@ -36,7 +36,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Fetch all projects
 async function fetchProjects() {
   try {
-    const response = await fetch("https://web-production-c197e.up.railway.app");
+    const response = await fetch("https://web-production-c197e.up.railway.app/api/v1/projects/featured");
     const projects = await response.json();
     console.log(projects);
   } catch(e) {

@@ -1,20 +1,25 @@
-/* ========== RIGHT — ACHIEVEMENTS SECTION ========== */
+/* ========== ACHIEVEMENTS — BELOW CENTERED ========== */
 .achievements-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex: 1;
-  min-width: 0;
-}
-.section-title{
-    color: whitesmoke;
-    text-align: center;
+  width: 100%;
+  max-width: 860px;
+  box-sizing: border-box;
 }
 
-/* ========== CERTIFICATION CARDS ========== */
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: whitesmoke;
+  margin: 0;
+  text-align: center;
+}
+
+/* ========== CERTIFICATION GRID ========== */
 .certifications-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   width: 100%;
 }
@@ -29,6 +34,8 @@
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .cert-card:hover {
@@ -36,7 +43,6 @@
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
 }
 
-/* Hover overlay hint */
 .cert-card::after {
   content: '🔍 View';
   position: absolute;
@@ -59,7 +65,7 @@
 
 .cert-image {
   width: 100%;
-  height: 100px;
+  height: 110px;
   object-fit: cover;
   display: block;
   background: rgba(200, 200, 200, 0.3);
@@ -71,26 +77,25 @@
 }
 
 .cert-info .card-title {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
   color: #222;
   margin: 0 0 4px 0;
 }
 
 .cert-info .card-description {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   color: #555;
   margin: 0 0 4px 0;
 }
 
 .cert-info .card-date {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: #888;
   font-weight: 500;
 }
 
-
-/* ========== LOCKED CERT CARDS ========== */
+/* ========== LOCKED CARDS ========== */
 .cert-locked {
   pointer-events: none;
   position: relative;
@@ -106,7 +111,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;

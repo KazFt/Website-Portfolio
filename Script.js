@@ -33,3 +33,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+// Fetch all projects
+const response = await fetch("http://localhost:8000/api/v1/projects/");
+const projects = await response.json();
+console.log(projects);
+
+// Submit contact form
+const res = await fetch("http://localhost:8000/api/v1/contact/", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    name: "John",
+    email: "john@gmail.com",
+    message: "Hello!"
+  })
+});
+const data = await res.json();
+console.log(data);

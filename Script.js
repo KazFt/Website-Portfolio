@@ -36,7 +36,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Fetch all projects
 async function fetchProjects() {
   try {
-    const response = await fetch("https://kazft.github.io/api/v1/projects/");
+    const response = await fetch("http://127.0.0.1:8000/api/v1/projects/featured");
     const projects = await response.json();
     console.log(projects);
   } catch(e) {

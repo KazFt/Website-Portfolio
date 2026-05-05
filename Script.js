@@ -13,3 +13,10 @@ function openCert(card) {
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeLightbox();
   });
+  // ========== INTRO SCREEN ==========
+window.addEventListener('load', () => {
+  const intro = document.getElementById('intro-screen');
+  setTimeout(() => {
+    intro.style.display = 'none';
+  }, 3500);
+});

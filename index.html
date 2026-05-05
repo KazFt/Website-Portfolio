@@ -384,7 +384,7 @@
 <script>
   async function trackVisit() {
     try {
-      await fetch('http://localhost:8000/api/v1/analytics/visit', {
+      await fetch('https://web-production-c197e.up.railway.app/api/v1/analytics/visit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -401,7 +401,7 @@
   // Load projects from backend
   async function loadProjects() {
     try {
-      const res = await fetch('http://localhost:8000/api/v1/projects/featured');
+      const res = await fetch('https://web-production-c197e.up.railway.app/api/v1/projects/featured');
       const projects = await res.json();
       const container = document.getElementById('projects-container');
       if (!projects.length) {
@@ -434,7 +434,7 @@
     btn.textContent = 'Sending...';
     btn.disabled = true;
     try {
-      const res = await fetch('http://localhost:8000/api/v1/contact/', {
+      const res = await fetch('https://web-production-c197e.up.railway.app/api/v1/contact/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

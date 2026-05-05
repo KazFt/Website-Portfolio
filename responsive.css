@@ -257,3 +257,49 @@
     flex-shrink: 0;
   }
 }
+/* ========== INTRO RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .intro-content {
+    text-align: center;
+    padding: 0 24px;
+  }
+
+  .intro-name {
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  .intro-title {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 425px) {
+  .intro-content {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .intro-name {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .intro-title {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro-name {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+
+  .intro-title {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+}
